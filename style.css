@@ -3,11 +3,15 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: hsl(0, 0%, 98%);
+    width: 100%;
+}
 
 /* nav  */
 nav {
     background-color: white;
-    z-index: 10;
+    z-index: 1;
 }
 
 nav .container {
@@ -29,7 +33,7 @@ nav ul {
 
 nav ul li {
     padding: 20px 10px;
-    color:grey ;
+    color:hsl(233, 8%, 62%) ;
 }
 
 nav ul li:hover {
@@ -57,7 +61,6 @@ nav button a {
 nav button:hover {
     opacity: 50%;
 }
-
 
 .intro {
     display: flex;
@@ -115,7 +118,7 @@ nav button:hover {
     background-position:50px -200px;
     background-repeat: no-repeat;
     background-size: 1000px;    
-    z-index: 1;
+    z-index: -2;
 }
 
 .intro .right img {
@@ -123,13 +126,13 @@ nav button:hover {
     position:relative;
     top: -150px;
     right: -200px;
-    z-index: 1;
+    z-index: -1;
 }
 
 
 .icon-container {
     padding-top: 150px;
-    background-color:  hsl(0, 0%, 98%);
+    background-color:  hsl(220, 16%, 96%);
     z-index: -2;
 }
 
@@ -152,7 +155,106 @@ nav button:hover {
     padding-bottom: 30px;
 }
 
+.Articles {
+    padding-bottom: 100px;
+}
+.Articles h3  {
+    padding:70px 0 20px 10px;
+}
 
+.Articles .container .articles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Articles .container .articles div {
+    width: 25%;
+    height: auto;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.Articles .container .articles div img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 200px;
+    width: 100%;
+}
+
+.Articles .container .articles div h6,h4,p {
+    padding: 0 10px;
+}
+
+.Articles .container .articles div h6 {
+    padding: 20px 0 10px 10px;
+    color: hsl(233, 8%, 62%);
+}
+
+.Articles .container .articles div h4 {
+    font-size: 20px;
+}
+
+.Articles .container .articles div p {
+    padding: 20px 0 10px 10px;
+    color: hsl(233, 8%, 62%);
+}
+
+footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    background-color: hsl(233, 26%, 24%);
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .left ol {
+    display: flex;
+}
+
+footer .left ol li{
+    padding:0 10px;
+}
+
+footer .container .middle {
+    display: flex;
+}
+
+footer .container .right button{
+        height: 40px;
+        align-self: center;
+        padding: 2px 15px;
+        border-radius: 25px;
+        border: none;
+        color: white;
+        background-image: linear-gradient(to right, hsl(192, 70%, 51%) ,  hsl(136, 65%, 51%));
+}
+
+footer .container .right {
+    display: flex;
+    flex-direction: column;
+    align-items: end   ;
+    justify-content: space-between;
+}
+
+footer .container .right button a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ol {
+    list-style: none;
+}
 
 
 
